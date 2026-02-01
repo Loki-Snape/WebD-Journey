@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Project Upside Down</title>
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      font-family: 'Special Elite', cursive;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    .course-banner {
+      background: rgba(138, 3, 3, 0.1);
+      border: 1px solid #8a0303;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .course-banner p {
+      margin: 0;
+      color: #ff0000;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-family: 'Creepster', cursive;
+      font-size: 5rem;
+      color: #ff0000;
+      text-shadow: 0 0 10px #ff0000, 0 0 20px #8a0303;
+      margin-bottom: 50px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .project-btn {
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      padding: 25px;
+      border: 2px solid #333;
+      text-align: center;
+      font-size: 1.4rem;
+      transition: 0.4s;
+      opacity: 0;
+      transform: translateY(30px);
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .project-btn.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-btn:hover {
+      border-color: #ff0000;
+      color: #ff0000;
+      box-shadow: 0 0 15px #ff0000, inset 0 0 5px #ff0000;
+      text-shadow: 0 0 5px #ff0000;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #444;
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="course-banner">
+    <p>These projects are part of <strong>The Complete Full-Stack Web Development Bootcamp</strong> by Angela Yu on Udemy.</p>
+  </div>
+
+  <h1>Project Archive</h1>
+
+  <div class="project-grid" id="grid">
+    <a href="1. Top 3 Movies.html" class="project-btn">1. Top 3 Movies</a>
+    <a href="2. Happy Birthday To Me.html" class="project-btn">2. Happy Birthday</a>
+    <a href="3. HTML Only Resume.html" class="project-btn">3. HTML Resume</a>
+    <a href="4. Colour Translater.html" class="project-btn">4. Color Translator</a>
+    <a href="5. Stark Motivation.html" class="project-btn">5. Stark Motivation</a>
+    <a href="6. Laos.html" class="project-btn">6. Laos Project</a>
+    <a href="7. Avengers Agency.html" class="project-btn">7. Avengers Agency</a>
+    <a href="8. Price Table.html" class="project-btn">8. Price Table</a>
+    <a href="9. Mondrian Painting.html" class="project-btn">9. Mondrian Painting</a>
+    <a href="10. TinDog.html" class="project-btn">10. TinDog</a>
+    <a href="11. Dice Toss.html" class="project-btn">11. Dice Toss</a>
+    <a href="HTML CSS Resume Capstone 1.html" class="project-btn">Capstone Resume</a>
+  </div>
+
+  <footer>
+    🎲 Loki 🎲
+  </footer>
+
+  <script>
+    window.addEventListener('load', () => {
+      const buttons = document.querySelectorAll('.project-btn');
+      buttons.forEach((btn, index) => {
+        setTimeout(() => {
+          btn.classList.add('reveal');
+        }, index * 100);
+      });
+    });
+  </script>
+
+</body>
+</html>
