@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Status</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .status-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 320px;
+            border-top: 5px solid #4CAF50;
+        }
+        .status-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .label {
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+        .value {
+            color: #34495e;
+            font-weight: 500;
+        }
+        .present-tag {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            padding: 5px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="status-card">
+    <div class="status-header">Class Information</div>
+
+    <div class="info-row">
+        <span class="label">Name:</span>
+        <span class="value">Mridul Jha</span>
+    </div>
+
+    <div class="info-row">
+        <span class="label">Registration No:</span>
+        <span class="value">23BCE10480</span>
+    </div>
+    
+    <div class="info-row">
+        <span class="label">Faculty:</span>
+        <span class="value">Dr. Anand Motwani</span>
+    </div>
+
+    <div class="info-row">
+        <span class="label">Slot:</span>
+        <span class="value">A11 + A12 + A13</span>
+    </div>
+
+    <div class="info-row">
+        <span class="label">Subject:</span>
+        <span class="value">AWS Solutions Architect</span>
+    </div>
+
+    <div class="present-tag">
+        23BCE10480 PRESENT
+    </div>
+</div>
+
+</body>
+</html>
