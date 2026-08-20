@@ -175,4 +175,4 @@ The archive follows a practical progression:
 
 ## Credits
 
-The exercises are part of Angela Yu's **The Complete Full-Stack Web Development Bootcamp** on Udemy. The personal content, styling changes, and project archive are maintained by Mridul Jha.
+The exercises are part of Angela Yu's **The Complete Full-Stack Web Development Bootcamp** on Udemy. The personal content, styling changes, and project archive are maintained by Mridul Jha
